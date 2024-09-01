@@ -5,10 +5,11 @@ import Sections from './components/Sections'
 
 const App = () => {
   return (
-    <>
-      <NavBar />
- <Sections />
-
+    < >
+      <div className="m-0 p-0">
+        <NavBar />
+        <Sections />
+      </div>
     </>
   )
 }
