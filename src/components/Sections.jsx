@@ -3,12 +3,12 @@ import Button from './Button'
 import Video from './Video'
 import Img from './img'
 import Card from './Card'
-import MacBook from '../assets/Macbook.jpg'
+import MacBook from '../assets/Macbook-removebg-preview.png'
 import iPad from '../assets/ipad pro.jpeg'
 import Intelligence from '../assets/Apple intelligence.jpeg'
 import Watch from '../assets/Apple watch.webp'
 import Cards from '../assets/Apple card.jpeg'
- 
+
 const Sections = () => {
     return (
         <div className='container'>
@@ -40,29 +40,32 @@ const Sections = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <Card name="MacBook Air" para="Lean. Mean. M3 machine." url={MacBook} alt="MacBook" />
+            <br />
+            <div  className='w-[1285px]  flex  flex-wrap gap-[25px]'>
+                <div className='flex gap-[25px]'>
+                    <div className=' w-[50%] h-[auto]  bg-red-500'>
+                        <Card className=' w-[50%] h-[auto]  bg-red-500' name="MacBook Air" para="Lean. Mean. M3 machine." url={MacBook} alt="MacBook"   />
+                    </div>
+                    <div>
+                        <Card name="iPad Pro" para="Unbelievably thin. Incredibly powerful." url={iPad} alt="ipad"   />
+                    </div>
                 </div>
-                <div>
-                    <Card name="iPad Pro" para="Unbelievably thin. Incredibly powerful." url={iPad} alt="ipad" />
-                </div>
-            </div>
-            <div>
-                <div>
-                    <Card name="Apple Intelligence" para="AI for the rest of us." url={Intelligence} alt="Intelligence" />
-                </div>
-                <div>
-                    <Card name="Watch" para=" Samrter. Brighter. Mightier" url={Watch} alt="Watch" /> 
-                    <p>SERIES 9</p>
+                <div className='flex gap-[25px]'>
+                    <div >
+                        <Card name="Apple Intelligence"   para="AI for the rest of us." url={Intelligence} alt="Intelligence" />
+                    </div>
+                    <div>
+                        <Card name="Watch" para=" Samrter. Brighter. Mightier" url={Watch} alt="Watch" />
+                        <p>SERIES 9</p>
+                    </div>
                 </div>
             </div>
             <div>
                 <div>
                     <Card name="Card" para="Get up to 3% Daily cash back with every purchase." url={Cards} alt="Card" />
                 </div>
-                <div>
-                    <Card name="MacBook Air" para="Lean. Mean. M3 machine." url={MacBook} alt="MacBook" />
+                <div  >
+                    <Card  name="MacBook Air" para="Lean. Mean. M3 machine."  url={MacBook} alt="MacBook" />
                 </div>
             </div>
             <div>
